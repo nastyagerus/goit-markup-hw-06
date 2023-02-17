@@ -682,12 +682,12 @@ button {
   height: 40px;
   padding: 8px 16px;
   outline: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
 
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  transition: var(--transition-dur-and-func);
+  transition: border var(--transition-dur-and-func);
 }
 
 .subscribe-form-email:focus {
@@ -751,7 +751,7 @@ button {
 .modal {
   position: absolute;
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: #fcfcfc;
   top: 50%;
   left: 50%;
@@ -819,11 +819,6 @@ button {
   margin-bottom: 8px;
 }
 
-/* .modal-form-field {
-  display: flex;
-  flex-direction: column;
-} */
-
 .modal-form-input-desc {
   display: block;
   font-size: 12px;
@@ -836,22 +831,34 @@ button {
 .modal-form-input {
   width: 100%;
   height: 40px;
-  border: 1px solid #4d5ae5;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 38px;
+  padding: 8px 38px;
 
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+
+  transition: fill var(--transition-dur-and-func);
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: #4d5ae5;
+}
+
+.modal-form-input:focus + .modal-form-contact-icon {
+  fill: #4d5ae5;
 }
 
 .modal-form-input-wrapper {
+  display: block;
   position: relative;
 }
 
 .modal-form-contact-icon {
   position: absolute;
+  bottom: 50%;
 }
 
 textarea {
@@ -861,6 +868,18 @@ textarea {
 .modal-form-textarea {
   width: 100%;
   height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 8px 16px;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+
+  transition: border-color var(--transition-dur-and-func);
+}
+
+.modal-form-textarea:focus {
+  outline: none;
+  border-color: #4d5ae5;
 }
 
 .modal-form-textarea::placeholder {
@@ -870,15 +889,37 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-field-check {
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
-.modal-form-contact-btn {
+.modal-form-check-desc::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.modal-form-check:checked + .modal-form-check-desc::before {
+  background-color: #404bbf;
+  background-image: url(/images/check-mark-modal.svg);
+  background-size: contain;
+  border: 1.25px solid #404bbf;
+  background-origin: border-box;
+}
+
+.modal-form-contact .modal-form-contact-btn {
+  align-self: center;
   width: 169px;
   height: 56px;
 }

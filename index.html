@@ -534,7 +534,7 @@
           </b>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
-            <div class="modal-form-input-wrapper">
+            <span class="modal-form-input-wrapper">
               <input
                 class="modal-form-input"
                 type="text"
@@ -544,11 +544,11 @@
               <svg class="modal-form-contact-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#person-modal"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Phone</span>
-            <div class="modal-form-input-wrapper">
+            <span class="modal-form-input-wrapper">
               <input
                 class="modal-form-input"
                 type="text"
@@ -559,16 +559,16 @@
               <svg class="modal-form-contact-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#phone-modal"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Email</span>
-            <div class="modal-form-input-wrapper">
+            <span class="modal-form-input-wrapper">
               <input class="modal-form-input" type="text" name="user_email" />
               <svg class="modal-form-contact-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#email-modal"></use>
               </svg>
-            </div>
+            </span>
           </label>
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Comment</span>
@@ -579,14 +579,15 @@
             ></textarea>
           </label>
           <input
-            class="modal-form-check"
+            class="modal-form-check visually-hidden"
             type="checkbox"
             name="user-policy"
             id="user-policy"
           />
-          <label class="modal-form-field-check" for="user-policy"
-            >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+          <label class="modal-form-check-desc" for="user-policy"
+            >I accept the terms and conditions of the&nbsp;<a href=""
+              >Privacy Policy</a
+            >
           </label>
           <button class="modal-form-contact-btn modal-btn" type="submit">
             Send
