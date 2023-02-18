@@ -647,30 +647,19 @@ button {
 
 /* =========================FOOTER-FORM-SUBSCRIBE==================================== */
 
-.subscribe-form {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 24px;
-  margin: 0 160px 30px 80px;
-}
-
 .subscribe-email-wrapper {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  gap: 16px;
+  gap: 24px;
 }
 
-.subscribe-form-label {
+.subscribe-form-desc {
   display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /* margin-bottom: 16px; */
+  margin-bottom: 16px;
 }
 
 .subscribe-form-email {
@@ -701,7 +690,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-form-email:focus .subscribe-form-email::placeholder {
+input:focus::placeholder {
   color: transparent;
 }
 
@@ -806,7 +795,10 @@ button {
 .modal-form-contact {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+}
+
+.modal-form-field {
+  margin-bottom: 8px;
 }
 
 .modal-form-text {
@@ -816,7 +808,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-form-input-desc {
@@ -858,7 +850,7 @@ button {
 
 .modal-form-contact-icon {
   position: absolute;
-  bottom: 50%;
+  transform: translateY(-50%);
 }
 
 textarea {
@@ -896,7 +888,8 @@ textarea {
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
-  margin-bottom: 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .modal-form-check-desc::before {

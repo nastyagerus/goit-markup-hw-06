@@ -488,34 +488,21 @@
         </div>
 
         <form class="subscribe-form">
+          <p class="subscribe-form-desc">Subscribe</p>
           <div class="subscribe-email-wrapper">
-            <label for="subscribe-email" class="subscribe-form-label">
+            <input
+              name="email"
+              class="subscribe-form-email"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-form-btn modal-btn" type="submit">
               Subscribe
-            </label>
-            <input
-              id="subscribe-email"
-              name="email"
-              class="subscribe-form-email"
-              type="email"
-              placeholder="E-mail"
-            />
+              <svg class="subscribe-icon" width="24px" height="24px">
+                <use href="./images/icons.svg#subscribe-plane"></use>
+              </svg>
+            </button>
           </div>
-          <!-- <label class="subscribe-form-label">
-            Subscribe
-            <input
-              name="email"
-              class="subscribe-form-email"
-              type="email"
-              placeholder="E-mail"
-            />
-          </label> -->
-
-          <button class="subscribe-form-btn modal-btn" type="submit">
-            Subscribe
-            <svg class="subscribe-icon" width="24px" height="24px">
-              <use href="./images/icons.svg#subscribe-plane"></use>
-            </svg>
-          </button>
         </form>
       </div>
     </footer>
