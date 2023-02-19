@@ -850,6 +850,8 @@ input:focus::placeholder {
 
 .modal-form-contact-icon {
   position: absolute;
+  top: 50%;
+  left: 16px;
   transform: translateY(-50%);
 }
 
